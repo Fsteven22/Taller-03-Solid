@@ -65,3 +65,6 @@ Lee `guia.md` para instrucciones, checklists y preguntas de discusión.
 Evidencia integrante 1: 
 
 ![Ejecucion SRP](imagenes/SRP_integrante1.png)
+
+integrante 3
+<img width="1592" height="772" alt="Captura de pantalla 2026-10-14 163539" src="https://github.com/user-attachments/assets/06aabcc2-f183-460f-960c-e2683a45cf43" />
