@@ -51,7 +51,9 @@ src/main/java/clinicaveterinaria/
 
 Lee `guia.md` para instrucciones, checklists y preguntas de discusión.
 
-- Principio: SRP, integrante 1.
+## Integrante 1.
+
+- Principio: SRP.
 - Violacion encontrada: Veterianario tenia datos y ademas reservaba citas, diagnosticaba, facturaba y generaba reportes, es decir, 5 razones para cambiar.
 - Cambios hechos: Quitamos *reservarCita*, *diagnosticar*, *generarFactura* y *crearReporte* de *Veterinario*. La logica quedo en *ReservaService*, *DiagnosticoService*, *FacturacionService* y *ReporteService* con un metodo nuevo *generarReporteCita*. Se ha actualizado `Main.java` para usar los servicios.
 - Checklist de la guia: compila, *Veterinario* ya no reserva ni diagnostica ni factura ni reporta, el `Main` Sigue funcionando y los nombres son claros.

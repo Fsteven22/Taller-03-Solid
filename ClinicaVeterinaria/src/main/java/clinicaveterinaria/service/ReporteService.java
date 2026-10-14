@@ -51,7 +51,7 @@ public class ReporteService {
     }
 
     public String generarReporteCita(Cita cita){
-        return "Reporte: " + cita.getVeterinario().getNombre() + "atendido a " + cita.getMascota().getNombre() + " con diagnostico " + cita.getDiagnostico();
+        return "Reporte: " + cita.getVeterinario().getNombre() + " atendido a " + cita.getMascota().getNombre() + " con diagnostico " + cita.getDiagnostico();
 
     }
         
