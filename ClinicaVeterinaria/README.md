@@ -50,3 +50,16 @@ src/main/java/clinicaveterinaria/
 - Integrante 4: refactorizar ISP y DIP.
 
 Lee `guia.md` para instrucciones, checklists y preguntas de discusión.
+
+- Principio: SRP, integrante 1.
+- Violacion encontrada: Veterianario tenia datos y ademas reservaba citas, diagnosticaba, facturaba y generaba reportes, es decir, 5 razones para cambiar.
+- Cambios hechos: Quitamos *reservarCita*, *diagnosticar*, *generarFactura* y *crearReporte* de *Veterinario*. La logica quedo en *ReservaService*, *DiagnosticoService*, *FacturacionService* y *ReporteService* con un metodo nuevo *generarReporteCita*. Se ha actualizado `Main.java` para usar los servicios.
+- Checklist de la guia: compila, *Veterinario* ya no reserva ni diagnostica ni factura ni reporta, el `Main` Sigue funcionando y los nombres son claros.
+- Respuestas a las preguntas de discusion:
+    a - Antes tenia 5 razones para cambiar.
+    b - Se gana codigo mas facil de cambiar, probar y entender, porque cada clase hace una sola cosa.
+    c - Si cambia el formato del reporte solo cambia *ReporteService*.
+
+Evidencia integrante 1: 
+
+![Ejecucion SRP](imagenes/SRP_integrante1.png)
