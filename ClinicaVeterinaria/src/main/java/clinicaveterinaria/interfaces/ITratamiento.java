@@ -4,4 +4,8 @@ public interface ITratamiento {
     double calcularCostoFinal();
 
     String obtenerIndicaciones();
+    
+    String PrepararSala ();
+
+    double calcularConImpuesto();
 }

@@ -16,31 +16,7 @@ public class Tratamiento {
         this.costo = costo;
     }
 
-    public double calcularCostoFinal() {
-        if (tipo == TipoTratamiento.VACUNA) {
-            return costo + 5.0;
-        } else if (tipo == TipoTratamiento.CIRUGIA) {
-            return costo * 1.25 + 80.0;
-        } else if (tipo == TipoTratamiento.MEDICAMENTO) {
-            return costo * 1.10;
-        } else if (tipo == TipoTratamiento.FISIOTERAPIA) {
-            return costo * 0.95;
-        }
-        return costo;
-    }
-
-    public String obtenerIndicaciones() {
-        if (tipo == TipoTratamiento.VACUNA) {
-            return "Observar fiebre durante 24 horas.";
-        } else if (tipo == TipoTratamiento.CIRUGIA) {
-            return "Ayuno previo y control postoperatorio.";
-        } else if (tipo == TipoTratamiento.MEDICAMENTO) {
-            return "Administrar segun receta.";
-        } else if (tipo == TipoTratamiento.FISIOTERAPIA) {
-            return "Repetir sesiones dos veces por semana.";
-        }
-        return "Sin indicaciones.";
-    }
+  
 
     public int getId() {
         return id;
@@ -99,5 +75,29 @@ public class Tratamiento {
                 ", descripcion='" + descripcion + '\'' +
                 ", costo=" + costo +
                 '}';
+    }
+
+    public double calcularConImpuesto() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calcularConImpuesto'");
+    }
+
+    public String PrepararSala() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'PrepararSala'");
+    }
+
+
+
+    public String obtenerIndicaciones() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'obtenerIndicaciones'");
+    }
+
+
+
+    public double calcularCostoFinal() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'calcularCostoFinal'");
     }
 }
